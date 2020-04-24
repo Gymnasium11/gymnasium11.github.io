@@ -24,6 +24,10 @@
 * [Лищенко Т.В.](https://www.codewars.com/users/Tim%20Deykun)
 * [Шелехов Н.Д.](https://www.codewars.com/users/NikSuperPlay)
 
+### Логотип Нашей команды
+
+![Логотип](\лул.png)
+
 
 
 
