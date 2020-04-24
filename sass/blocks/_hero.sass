@@ -1,0 +1,41 @@
+.first-section
+  background-image: url('../images/hero-image.jpg')
+  background-size: contain
+  background-color: #dae4e6
+  background-repeat: no-repeat
+.hero
+  
+  &-block
+    display: flex
+    
+    padding-top: 100px
+    padding-bottom: 100px
+  &__title
+    font-size: 38px
+    margin: 0
+  &__subtitle
+    font-size: 18px
+  &__text
+    max-width: 300px
+    min-height: 200px
+    height: 300px
+    display: flex
+    
+    margin-left: 60%
+    flex-direction: column
+    justify-content: space-between
+  
+
+@media ( max-width: 1200px )
+  .hero
+    &__text
+      margin-left: 70%
+
+@media ( max-width: 980px )
+  .first-section
+    background-image: none
+  .hero
+    &-block
+      justify-content: center
+    &__text
+      margin-left: 0

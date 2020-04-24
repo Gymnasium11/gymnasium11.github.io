@@ -1,0 +1,43 @@
+*
+	box-sizing: border-box
+body
+	
+  margin: 0
+  font-family: sans-serif
+img
+	max-width: 100%
+
+
+.container
+  
+  width: 1200px
+  margin: auto
+  height: 100%
+  transition: 0.4s
+@media ( max-width: 1200px )
+  .container
+    width: 760px
+@media ( max-width: 768px )
+  .container
+    width: 560px
+
+@media ( max-width: 768px )
+	.container
+		max-width: 580px
+		width: 90%
+
+.section
+  &-title
+    color: #1D1D1D
+    font-size: 30px
+  &-subtitle
+    font-size: 16px
+    color: #787878
+  &-button 
+    width: 180px
+    height: 55px
+    border: none
+    background-color: #10C9C3
+    font-size: 12px
+    text-transform: uppercase
+    color: #fff

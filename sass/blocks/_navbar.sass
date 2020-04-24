@@ -1,0 +1,40 @@
+.navbar
+
+  &__logo
+    width: 40px
+    max-width: 40px
+    max-height: 40px
+  &-block
+    padding-top: 38px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-list
+    
+    width: 50%
+    display: flex
+    justify-content: space-between
+    &__item
+      text-transform: uppercase
+      color: #000000
+      transition: 0.4s
+      text-decoration: none
+      font-size: 12px
+      
+      
+      &:hover
+        color: #10C9C3
+    margin-right: 10px
+  
+
+@media ( max-width: 1200px  )
+  .navbar
+    &-list
+      width: 65%
+
+@media ( max-width: 768px )
+	.navbar
+    &-list
+      margin-right: 0
+      display: none
+    
