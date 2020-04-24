@@ -23,11 +23,3 @@
 * [Яковлев П.А.](https://www.codewars.com/users/PoulYak)
 * [Лищенко Т.В.](https://www.codewars.com/users/Tim%20Deykun)
 * [Шелехов Н.Д.](https://www.codewars.com/users/NikSuperPlay)
-
-### Логотип Нашей команды
-
-![Логотип](\img\logo.png "logo team")
-
-
-
-
