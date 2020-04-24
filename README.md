@@ -26,7 +26,7 @@
 
 ### Логотип Нашей команды
 
-![Логотип](//logo.png "logo team")
+![Логотип](\img\logo.png "logo team")
 
 
 
