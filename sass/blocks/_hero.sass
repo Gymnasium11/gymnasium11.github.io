@@ -1,4 +1,4 @@
-.first-section
+.header
   background-image: url('../images/hero-image.jpg')
   background-position: left bottom
   background-size: auto 100%
@@ -17,7 +17,7 @@
   &__subtitle
     font-size: 18px
   &__text
-    max-width: 300px
+    max-width: 350px
     min-height: 200px
     height: 300px
     display: flex
@@ -28,15 +28,22 @@
   
 
 @media ( max-width: 1200px )
-  
-  .first-section
-    background-position: -75% 
+  .hero
+    &__title
+      font-size: 34px
+
+    &__subtitle
+      font-size: 17px
+      max-width: 280px
+    &__text
+      max-width: 300px
+  .header
+    background-position: -150px 
 
 @media ( max-width: 980px )
-  .first-section
+  .header
     background-image: none
   .hero
     &-block
-      justify-content: flex-start
-    &__text
-      margin-left: 0
+      justify-content: center
+
