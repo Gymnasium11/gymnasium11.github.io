@@ -1,0 +1,80 @@
+.skills
+  background-image: url('../images/skills-bg.jpg')
+  background-repeat: no-repeat
+  background-position: right
+  background-size: auto 100%
+  background-color: #F4F8FA
+  padding: 165px 0
+  &-abilities
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 242px
+    width: 50%
+    padding-right: 84px
+    
+    &__ability
+      &1, &2, &3
+        text-transform: uppercase
+        font-size: 12px
+        max-width: 500px
+        position: relative
+        list-style-type: none
+        display: block
+        height: 32px
+        &::after
+          border-radius: 2px
+          position: absolute 
+          content: ''
+          bottom: 0
+          left: 0
+          height: 4px
+          width: 100%
+          background-color: #000
+          opacity: 0.2
+      &1, &2, &3
+        &::before
+          position: absolute 
+          content: ''
+          bottom: 0
+          left: 0
+          height: 4px
+          background-color: #10C9C3
+      &1
+        &::before
+          width: 60%
+      &2
+        &::before
+          width: 40%
+      &3
+        &::before
+          width: 50%
+          
+    &__title
+      margin: 0
+
+@media ( max-width: 1200px )
+  .skills
+    &-abilities
+      width: 57%
+      padding-right: 0
+@media ( max-width: 980px )
+  .skills
+    background-position: calc(40% + 205px)
+@media ( max-width: 768px )
+  .skills
+    &-abilities
+      width: 70%
+      padding-right: 0
+
+@media ( max-width: 560px )
+  .skills
+    padding: 80px 0
+    background-image: none
+    &-abilities
+      width: 100%
+      &__ability
+        &1, &2, &3
+          font-size: 10px
+      
+  
