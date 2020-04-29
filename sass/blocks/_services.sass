@@ -1,0 +1,67 @@
+.services
+  background-color: #F5F5F5
+  &-block
+    flex-wrap: wrap
+    display: flex
+    justify-content: space-between
+    &__item
+      flex-basis: 21%
+      &:nth-child(1)
+        margin-bottom: 60px
+        
+    &__icon
+      width: 40px
+      margin: auto
+    &__title
+      display: block
+      color: #191919
+      font-weight: bold
+      font-size: 12px
+      margin-top: 30px
+      margin-bottom: 20px
+      text-transform: uppercase
+      text-align: center 
+    &__subtitle
+      display: block
+      font-size: 16px
+      color: #787878
+      text-align: center 
+@media ( max-width: 1200px )
+  .services
+    &-block
+      &__subtitle
+        font-size: 14px
+      &__item
+        flex-basis: 29%
+        &:nth-child(8), &:nth-child(7)
+          display: none
+        
+          
+
+@media ( max-width: 768px )
+  .services
+    &-block
+      &__title
+        margin-bottom: 10px
+        margin-top: 20px
+      &__item
+        flex-basis: 42%
+        &:nth-child(8), &:nth-child(7)
+          display: block
+        &:nth-child(odd)
+          margin-bottom: 40px
+  
+@media ( max-width: 560px )
+  .services
+    &-block
+      &__title
+        margin-bottom: 10px
+        margin-top: 20px
+      &__item
+        flex-basis: 90%
+        max-width: 270px
+        margin: auto
+        margin-bottom: 30px
+        &:nth-child(8), &:nth-child(7)
+          display: none
+          
