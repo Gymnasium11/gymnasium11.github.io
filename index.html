@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTTP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    
     <link href="images/logo.png" rel="shortcut icon" type="image/x-icon" />
 </head>
 
@@ -140,38 +142,27 @@
             </div>
             <!-- /.container -->
         </section>
-        <section class="works section">
+        <section class="section works">
             <div class="container">
-                <div class="works-block">
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="works-block__item">
-                        <img src="" alt="">
-                    </div>
+                <div class="slider">
+                    <div class="slider__item"><img class="slider__image" src="images/slider/slider-1.jpg" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__image" src="images/slider/slider-2.jpg" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__image" src="images/slider/slider-3.jpg" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__image" src="images/slider/slider-1.jpg" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__image" src="images/slider/slider-2.jpg" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img class="slider__image" src="images/slider/slider-3.jpg" alt=""></div>
+                    <!-- /.slider__item -->
                 </div>
-            </div>
-            <div class="works-button">
-                <button class="works-button__button">Больше наших работ</button>
-            </div>
+                <div class="arrows works__arrows" style="max-width: 120px;margin: auto;display: flex;justify-content: space-between;margin-top: 68px;">
+                    <div class="arrows__left"><img src="images/slider/right-arrow.jpg" alt=""></div>
+                    <div class="arrows__right"><img src="images/slider/left-arrow.jpg" alt=""></div>
+                </div>
+            </div>        
         </section>
         <section class="section video">
                 <div class="container">
@@ -228,6 +219,34 @@
     </footer>
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.arrows__left'),
+            nextArrow: $('.arrows__right'),
+            responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+                
+				]
+        });
+    });
+    </script>
 </body>
 
 </html>
