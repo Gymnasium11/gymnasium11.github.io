@@ -3,6 +3,17 @@
 body
   margin: 0
   font-family: Montserrat-Medium,AdobeInvisFont,Tahoma
+  &::-webkit-scrollbar
+    
+    background-color: #ccc
+    &-button
+      background-color: #10aca7
+    &-track
+      background-color: none
+      &-piece
+        background: none
+    &-thumb
+      background-color: #10aca7
 img
 	max-width: 100%
 .tab
@@ -40,7 +51,7 @@ img
       background-color: #fff
       color: #10C9C3
 
-scroll-bar
+
 @media ( max-width: 1200px )
   .container
     width: 760px
