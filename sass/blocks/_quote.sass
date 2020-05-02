@@ -1,0 +1,67 @@
+.quote
+  padding-bottom: 60px
+  background-color: #10C9C3
+  
+  &-block
+    display: flex
+    &__item
+      
+      height: 400px
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+  &__text
+    display: block
+    margin: auto
+    margin-top: 0
+    color: #fff
+    font-size: 30px
+    width: 800px
+    max-width: 90%
+    margin-bottom: 35px
+  &__autor
+    display: inline-block
+    color: #fff
+    font-size: 12px
+    text-transform: uppercase
+.slick-dots li button
+  &:hover
+    &::before  
+      font-size: 40px
+  &:before
+    color: #fff
+    font-size: 22px
+    transition: .4s
+  
+.slick-dots li.slick-active button:before
+  color: #fff
+  font-size: 40px
+    
+.slick-prev:before,
+.slick-next:before
+  font-size: 30px
+.slick-initialized .slick-slide
+  display: flex
+
+@media ( max-width: 768px )
+  .quote
+    
+    &-block
+      max-width: 85%
+      margin: auto
+    &__text
+      font-size: 25px
+  
+@media ( max-width: 560px )
+  .quote
+    &__text
+      font-size: 22px
+    &__autor
+      font-size: 10px
+@media ( max-width: 320px )
+  .quote
+    &__text
+      font-size: 16px
+    &__autor
+      font-size: 8px
