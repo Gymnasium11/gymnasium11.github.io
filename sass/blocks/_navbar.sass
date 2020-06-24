@@ -1,0 +1,106 @@
+.navbar
+  &-btn
+    display: none
+  &__logo
+    width: 40px
+    max-width: 40px
+    max-height: 40px
+  &-block
+    padding-top: 38px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-list
+    
+    width: 50%
+    display: flex
+    justify-content: space-between
+    &__item
+      text-transform: uppercase
+      color: #000000
+      transition: 0.4s
+      text-decoration: none
+      font-size: 12px
+      
+      
+      &:hover
+        color: #10C9C3
+    
+  
+
+@media ( max-width: 1200px  )
+  .navbar
+    &-list
+      width: 65%
+
+@media ( max-width: 768px )
+	.navbar
+    &-block
+      padding-top: 20px
+      flex-wrap: wrap
+    &-list
+      
+      flex-basis: 100%
+      transition: 0.2s
+      height: 0
+      width: 100px
+      
+      flex-direction: column  
+      right: -250px
+      top: 88px
+      padding: 0 20px
+      background-color: #fff
+      &__item
+        height: 0
+        opacity: 0
+        transition: 0.2s
+      &__active
+        
+        
+        right: 0
+        height: 400px
+        a
+          display: flex
+          align-items: center
+          height: 100%
+          opacity: 1
+    &__logo
+      
+
+    &-btn
+      transition: .4s
+      display: block
+      width: 50px
+      height: 50px
+      background-color: #10C9C3
+      position: relative
+      &:hover
+        background-color: #fff
+        span, span::before, span::after
+          background-color: #10C9C3
+      span::before,span::after
+        transition: .4s
+        display: block
+        content: ''
+      span,span::before,span::after
+        display: block
+        position: absolute
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -10px
+        width: 20px
+        height: 2px
+        background-color: #fff
+      span::before
+        transform: translateY(-5px)
+      span::after
+        transform: translateY(5px)
+      &__active
+        span
+          height: 0
+        span::before
+          transform: rotate(45deg)
+        span::after
+          transform: rotate(-45deg)
+    
