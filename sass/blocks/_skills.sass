@@ -15,7 +15,7 @@
     &__title
       color: #171717
     &__ability
-      &1, &2, &3
+      &1, &2, &3, &4, &5
         text-transform: uppercase
         font-size: 12px
         max-width: 500px
@@ -28,27 +28,34 @@
           content: ''
           bottom: 0
           left: 0
-          height: 4px
+          height: 8px
           width: 100%
           background-color: #000
           opacity: 0.2
-      &1, &2, &3
+      &1, &2, &3, &4, &5
         &::before
           position: absolute 
           content: ''
           bottom: 0
           left: 0
-          height: 4px
+          height: 8px
           background-color: #10C9C3
       &1
         &::before
           width: 60%
       &2
         &::before
-          width: 40%
+          width: 60%
       &3
         &::before
           width: 50%
+      &4
+        &::before
+          width: 10%
+      &5
+        &::before
+          width: 0.1%
+
           
     &__title
       margin: 0
